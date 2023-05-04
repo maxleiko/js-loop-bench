@@ -72,7 +72,7 @@ const batches = [10, 100, 1_000, 10_000, 100_000, 1_000_000]
   });
 
 
-console.log(`size   ;forEach;forLoop;forOf  ;reduce`);
+console.log(`size   ,forEach,forLoop,forOf  ,reduce`);
 for (const b of batches) {
-  console.log(`${b.size};${b.forEach};${b.forLoopOldSchool};${b.forOf};${b.reduce}`);
+  console.log(`${b.size},${b.forEach},${b.forLoopOldSchool},${b.forOf},${b.reduce}`);
 }
