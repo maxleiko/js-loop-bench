@@ -1,13 +1,6 @@
 {
 	"scripts": {
-		"build": "tsup index.ts",
-		"node:16": "nvm use 16 && echo '; node 16' && node dist/index.js >> results.csv",
-		"node:18": "nvm use 18 && echo '; node 18' && node dist/index.js >> results.csv",
-		"node:20": "nvm use 20 && echo '; node 20' && node dist/index.js >> results.csv",
-		"node": "npm run node:16 && npm run node:18 && npm run node:20",
-		"deno": "nvm use 16 && echo '; deno' && deno run dist/index.js >> results.csv",
-		"bun": "nvm use 16 && echo '; bun' && bun dist/index.js >> results.csv",
-		"bench": "npm run node && npm run deno && npm run bun"
+		"build": "tsup src/index.ts"
 	},
 	"devDependencies": {
 		"tsup": "6.7.0"

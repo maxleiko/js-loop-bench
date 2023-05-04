@@ -1,7 +1,5 @@
 #!/bin/bash
-set -ex
-
-pnpm install
+set -e
 
 # node 16
 nvm install 16
